@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h2>Add Profile</h2>
+        <input type="number" id="profileId" placeholder="0" />
+        <input type="text" id="profileName" placeholder="Name" />
+        <input type="number" id="profileAge" placeholder="Age" />
+        <button id="addProfile">Add Profile</button>
+      </div>
+      <div>
+        <h2>Remove Profile</h2>
+        <input type="number" placeholder="ID" id="removeProfileId"/>
+        <button id="removeProfileButton">Remove Profile</button>
+      </div>
+      <div>
+        <ul id="profileList"></ul>
+      </div>
+      <div>
+        <p id="averageAgeArea"></p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
