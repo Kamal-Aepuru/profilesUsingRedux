@@ -26,13 +26,8 @@ const profileReducer = (state = initialState, action) => {
       if (state.profileList.length === 0) {
         return { ...state, average: 0 };
       }
-      const totalAge = state.profileList.reduce(
-        (acc, curr) => acc + curr.age,
-        0
-      );
-      const averageAge = Number(
-        (totalAge / state.profileList.length).toFixed(2)
-      );
+      const totalAge = state.profileList.reduce((acc, curr) => acc + curr.age, 0);
+      const averageAge = Number((totalAge / state.profileList.length).toFixed(2));
 
       return { ...state, average: averageAge };
     }
